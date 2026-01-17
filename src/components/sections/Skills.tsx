@@ -81,7 +81,7 @@ export default function Skills() {
           className="mt-24"
         >
            <div className="text-center mb-16 relative">
-              <h3 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 inline-block relative z-10 pb-4">
+              <h3 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-600 dark:from-white dark:to-white/60 inline-block relative z-10 pb-4">
                 Core Strengths
               </h3>
               <div className="h-1 w-24 bg-blue-500 mx-auto rounded-full blur-[2px] shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
@@ -150,7 +150,7 @@ export default function Skills() {
                     </div>
 
                     {/* Text */}
-                    <h4 className="font-semibold text-base md:text-lg text-white/90 leading-tight">
+                    <h4 className="font-semibold text-base md:text-lg text-gray-900 dark:text-white/90 leading-tight">
                       {item.text}
                     </h4>
 
