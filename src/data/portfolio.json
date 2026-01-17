@@ -1,0 +1,122 @@
+{
+  "personalInfo": {
+    "name": "Abishek N",
+    "title": "Software Developer | Full Stack Engineer",
+    "bio": "Results-oriented Software Developer with 4+ years of professional experience in building scalable, high-performance web and backend systems.",
+    "email": "your email",
+    "location": "Coimbatore, Tamil Nadu, India",
+    "image": "/image/img1-abi.png",
+    "social": {
+      "github": "https://github.com/Abishek-0412",
+      "linkedin": "https://www.linkedin.com/in/abishek-n-487a54218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "twitter": "https://x.com/AbishekN0412"
+    },
+    "resumeLink": "/resume/tecresume.pdf"
+  },
+  "hero": {
+    "title": "Abishek N",
+    "subtitle": "Building scalable, high-performance web & backend systems.",
+    "ctaText": "View Projects",
+    "resumeLink": "/resume/tecresume.pdf"
+  },
+  "about": {
+    "description": [
+      "I am a results-oriented Software Developer with 4+ years of professional experience in building scalable, high-performance web and backend systems. I specialize in React + TypeScript frontend development and robust backend engineering using Node.js, Golang, .NET, and Python.",
+      "I have strong experience in designing enterprise-grade applications, integrating complex databases, and delivering production-ready solutions within tight timelines. I enjoy solving challenging technical problems, optimizing performance, and building clean, maintainable software."
+    ]
+  },
+  "careerObjective": "To build scalable, secure, and high-performance software solutions that solve real-world business problems using modern technologies.",
+  "strengths": [
+    "Strong problem-solving and analytical skills",
+    "Clean and scalable code architecture",
+    "UI/UX focused development",
+    "Team leadership and mentoring",
+    "Performance and optimization mindset"
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Bootstrap"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Golang", ".NET", "Python", "LangChain", "GraphQL"]
+    },
+    {
+      "category": "Databases",
+      "items": ["PostgreSQL", "MySQL", "MSSQL", "MongoDB", "Cassandra", "ClickHouse", "ArangoDB", "Scylla", "Qdrant"]
+    },
+    {
+      "category": "Tools & Platforms",
+      "items": ["Git", "GitHub", "GitLab", "Docker", "Postman", "Swagger", "Vite", "Webpack"]
+    },
+    {
+      "category": "Cloud & Hosting",
+      "items": ["AWS", "Microsoft Azure", "Netlify"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Brightspot Technology Solutions",
+      "role": "Software Developer",
+      "period": "2022 - Present",
+      "description": [
+        "Design and develop scalable web applications and backend services.",
+        "Implement responsive, user-friendly UI using React & TypeScript.",
+        "Build and integrate REST & GraphQL APIs.",
+        "Optimize application performance and database queries.",
+        "Lead and coordinate small development teams to meet project deadlines.",
+        "Successfully delivered a complete production-ready web & mobile application within 1 month."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Wine Platform",
+      "description": "A high-performance full-stack system for managing and analyzing wine data.",
+      "technologies": ["React", "TypeScript", "Golang", "Node.js", "GraphQL"],
+      "liveLink": "https://example.com",
+      "repoLink": "https://github.com",
+      "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Matrimony Application",
+      "description": "A complete cross-platform matrimonial service platform.",
+      "technologies": ["React", "TypeScript", "Node.js", "GraphQL", "Flutter"],
+      "liveLink": "https://example.com",
+      "repoLink": "https://github.com",
+      "image": "/image/matrimony.png"
+    },
+    {
+      "title": "Document Agent System",
+      "description": "AI-based intelligent agent for automatic software requirement and documentation generation.",
+      "technologies": ["AI", "Python", "LangChain", "React"],
+      "liveLink": "https://example.com",
+      "repoLink": "https://github.com",
+      "image": "https://images.unsplash.com/photo-1618044733300-9472054094ee?fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Portfolio",
+      "description": "Personal portfolio website showcasing skills and projects. Built with modern web technologies.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "liveLink": "https://github.com/Abishek-0412",
+      "repoLink": "https://github.com/Abishek-0412",
+      "image": "/image/man-user-circle-icon.png"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Government College of Arts and Science, Coimbatore",
+      "degree": "Master of Science in Computer Science (M.Sc.)",
+      "period": "2020"
+    }
+  ],
+  "certifications": [
+    "MongoDB Administrator",
+    "Apache Kafka Fundamentals"
+  ],
+  "additionalExpertise": {
+    "domains": ["SaaS", "Enterprise", "AI Tools", "Data Systems"],
+    "methodologies": ["Agile", "Team Leadership", "Performance Optimization"]
+  }
+}
