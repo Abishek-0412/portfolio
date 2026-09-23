@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Code2, ChevronLeft, ChevronRight } from "lucide-react";
+import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 import portfolioData from "../../data/portfolio.json";
 
@@ -8,7 +8,7 @@ export default function Projects() {
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const scrollAmount = 400; // Approx card width + gap
+      const scrollAmount = 450;
       scrollRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -17,121 +17,125 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-muted/30 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative group/section">
+    <section
+      id="projects"
+      className="py-24 bg-background relative overflow-hidden font-sans"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6 text-primary">
-            <Code2 size={32} />
-          </div>
-          <h2 className="text-4xl font-bold mb-4">Featured <span className="text-primary">Projects</span></h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Showcasing real-world applications and technical solutions.
+          <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4 block">
+            Selected Works
+          </span>
+          <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
+            Featured <span className="text-gradient">Projects</span>
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+            Architecting and delivering robust, scalable solutions for complex
+            business challenges.
           </p>
         </motion.div>
 
-        <div className="relative">
-            {/* Left Scroll Button */}
-            <button 
-                onClick={() => scroll("left")}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 lg:-ml-12 z-10 p-3 rounded-full bg-background/80 backdrop-blur-sm border border-border shadow-lg text-foreground hover:text-primary hover:border-primary transition-all duration-300 opacity-0 group-hover/section:opacity-100 hidden md:block"
-                aria-label="Scroll left"
-            >
-                <ChevronLeft size={24} />
-            </button>
+        <div className="relative group/section">
+          {/* Left Scroll Button */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute -left-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-primary/20 transition-all opacity-0 group-hover/section:opacity-100 hidden md:flex items-center justify-center shadow-2xl"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft size={24} />
+          </button>
 
-            {/* Right Scroll Button */}
-            <button 
-                onClick={() => scroll("right")}
-                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 lg:-mr-12 z-10 p-3 rounded-full bg-background/80 backdrop-blur-sm border border-border shadow-lg text-foreground hover:text-primary hover:border-primary transition-all duration-300 opacity-0 group-hover/section:opacity-100 hidden md:block"
-                aria-label="Scroll right"
-            >
-                <ChevronRight size={24} />
-            </button>
+          {/* Right Scroll Button */}
+          <button
+            onClick={() => scroll("right")}
+            className="absolute -right-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 text-white hover:bg-primary/20 transition-all opacity-0 group-hover/section:opacity-100 hidden md:flex items-center justify-center shadow-2xl"
+            aria-label="Scroll right"
+          >
+            <ChevronRight size={24} />
+          </button>
 
-            <motion.div 
+          <div
             ref={scrollRef}
-            className="flex overflow-x-auto gap-8 pb-12 snap-x snap-mandatory px-4 -mx-4 scrollbar-none"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                opacity: 1,
-                transition: {
-                    staggerChildren: 0.2
-                }
-                }
-            }}
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-            >
+            className="flex overflow-x-auto gap-6 pb-12 scrollbar-none snap-x snap-mandatory"
+          >
             {portfolioData.projects.map((project, idx) => (
-                <motion.div
+              <motion.div
                 key={idx}
-                variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 50 } }
-                }}
-                className="min-w-[320px] md:min-w-[400px] snap-center group bg-card border border-border rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 flex flex-col h-full"
-                >
-                <div className="relative overflow-hidden aspect-video">
+                initial={{ opacity: 0, scale: 0.98 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="flex-shrink-0 w-[300px] md:w-[450px] snap-center"
+              >
+                <div className="glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 h-full border-white/5 group/card hover:border-primary/20">
+                  <div className="relative h-48 md:h-60 overflow-hidden">
                     <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-105 grayscale-[30%] group-hover/card:grayscale-0"
                     />
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4 backdrop-blur-[2px]">
-                    <a 
-                        href={project.repoLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-primary hover:text-white transition-all transform hover:scale-110 border border-white/20"
-                        title="View Code"
-                    >
-                        <Github size={22} />
-                    </a>
-                    <a 
-                        href={project.liveLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-primary hover:text-white transition-all transform hover:scale-110 border border-white/20"
-                        title="View Live"
-                    >
-                        <ExternalLink size={22} />
-                    </a>
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
+                    {/* <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 bg-primary text-primary-foreground text-[10px] font-black uppercase rounded-lg shadow-lg flex items-center gap-1.5">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                        Project
+                      </span>
+                    </div> */}
+                  </div>
+
+                  <div className="p-6 md:p-8 space-y-6">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-black text-white group-hover/card:text-primary transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground font-medium text-sm md:text-base leading-relaxed mt-3 line-clamp-3">
+                        {project.description}
+                      </p>
                     </div>
-                </div>
-                
-                <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    {project.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-6 flex-grow leading-relaxed">
-                    {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.technologies.slice(0, 4).map((tech, techIdx) => (
-                        <span 
-                        key={techIdx} 
-                        className="text-xs font-medium px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground border border-secondary"
+
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.slice(0, 4).map((tech, tIdx) => (
+                        <span
+                          key={tIdx}
+                          className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-[10px] font-bold text-muted-foreground uppercase tracking-tight"
                         >
-                        {tech}
+                          {tech}
                         </span>
-                    ))}
-                    {project.technologies.length > 4 && (
-                        <span className="text-xs font-medium px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground">+{project.technologies.length - 4}</span>
-                    )}
+                      ))}
                     </div>
+
+                    <div className="flex items-center gap-4 pt-4 border-t border-white/5">
+                      {project.liveLink && project.liveLink !== "#" && (
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2.5 bg-primary/10 rounded-xl text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                          title="Live Demo"
+                        >
+                          <ExternalLink size={18} />
+                        </a>
+                      )}
+                      <a
+                        href={project.repoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2.5 bg-white/5 rounded-xl text-muted-foreground hover:bg-white/10 hover:text-white transition-all"
+                        title="Repository"
+                      >
+                        <Github size={18} />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                </motion.div>
+              </motion.div>
             ))}
-            </motion.div>
+          </div>
         </div>
       </div>
     </section>
