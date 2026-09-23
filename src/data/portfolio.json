@@ -1,107 +1,150 @@
 {
   "personalInfo": {
     "name": "Abishek N",
-    "title": "Software Developer | Full Stack Engineer",
-    "bio": "Results-oriented Software Developer with 4+ years of professional experience in building scalable, high-performance web and backend systems.",
-    "email": "your email",
+    "title": "Full Stack Developer | Developer Lead",
+    "bio": "Full Stack Developer with over 4 years of experience in building scalable, high-performance web applications across e-commerce, SaaS, and AI-driven platforms.",
+    "email": "abishekn0412@gmail.com",
     "location": "Coimbatore, Tamil Nadu, India",
     "image": "/image/img1-abi.png",
     "social": {
       "github": "https://github.com/Abishek-0412",
-      "linkedin": "https://www.linkedin.com/in/abishek-n-487a54218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "linkedin": "https://www.linkedin.com/in/abishek-n-487a54218",
       "twitter": "https://x.com/AbishekN0412"
     },
     "resumeLink": "/resume/tecresume.pdf"
   },
   "hero": {
     "title": "Abishek N",
-    "subtitle": "Building scalable, high-performance web & backend systems.",
+    "subtitle": "Engineering reliable systems, optimizing performance, and delivering high-quality user experiences.",
     "ctaText": "View Projects",
     "resumeLink": "/resume/tecresume.pdf"
   },
   "about": {
     "description": [
-      "I am a results-oriented Software Developer with 4+ years of professional experience in building scalable, high-performance web and backend systems. I specialize in React + TypeScript frontend development and robust backend engineering using Node.js, Golang, .NET, and Python.",
-      "I have strong experience in designing enterprise-grade applications, integrating complex databases, and delivering production-ready solutions within tight timelines. I enjoy solving challenging technical problems, optimizing performance, and building clean, maintainable software."
+      "I am a Full Stack Developer with over 4 years of professional experience in designing, developing, and deploying scalable, high-performance web applications across e-commerce, SaaS, and AI-driven platforms.",
+      "I demonstrate strong expertise in modern frontend and backend technologies, distributed system design, real-time communication, and database optimization. I have a proven ability to lead end-to-end development initiatives, collaborate effectively with cross-functional teams, and deliver robust, secure, and production-ready solutions."
     ]
   },
   "careerObjective": "To build scalable, secure, and high-performance software solutions that solve real-world business problems using modern technologies.",
   "strengths": [
-    "Strong problem-solving and analytical skills",
-    "Clean and scalable code architecture",
-    "UI/UX focused development",
-    "Team leadership and mentoring",
-    "Performance and optimization mindset"
+    "Distributed System Design",
+    "Real-time Communication Systems",
+    "Database Performance Tuning",
+    "AI Agent & LLM Integration",
+    "Engineering Excellence & Observability"
   ],
   "skills": [
     {
       "category": "Frontend",
-      "items": ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Bootstrap"]
+      "items": [
+        "React.js",
+        "Redux",
+        "TypeScript",
+        "JavaScript",
+        "Zustand",
+        "Tailwind CSS",
+        "Lodash.js",
+        "HTML5/CSS3"
+      ]
     },
     {
       "category": "Backend",
-      "items": ["Node.js", "Golang", ".NET", "Python", "LangChain", "GraphQL"]
+      "items": [
+        "Node.js",
+        "Go (Golang)",
+        "GraphQL",
+        "Python",
+        "REST APIs",
+        "LangChain/LangGraph",
+        "AI Agent Development"
+      ]
     },
     {
-      "category": "Databases",
-      "items": ["PostgreSQL", "MySQL", "MSSQL", "MongoDB", "Cassandra", "ClickHouse", "ArangoDB", "Scylla", "Qdrant"]
+      "category": "Database",
+      "items": [
+        "PostgreSQL",
+        "MSSQL",
+        "SQL Optimization",
+        "Indexing",
+        "Query Performance Tuning"
+      ]
     },
     {
-      "category": "Tools & Platforms",
-      "items": ["Git", "GitHub", "GitLab", "Docker", "Postman", "Swagger", "Vite", "Webpack"]
+      "category": "Cloud & DevOps",
+      "items": [
+        "AWS (Lambda, EC2, RDS, SQS)",
+        "Terraform",
+        "CI/CD Pipelines",
+        "WAF & Security"
+      ]
     },
     {
-      "category": "Cloud & Hosting",
-      "items": ["AWS", "Microsoft Azure", "Netlify"]
+      "category": "Observability & Tools",
+      "items": [
+        "OpenTelemetry",
+        "Datadog",
+        "Flipt (Feature Flags)",
+        "Playwright",
+        "Git",
+        "Linear"
+      ]
     }
   ],
   "experience": [
     {
       "company": "Brightspot Technology Solutions",
-      "role": "Software Developer",
-      "period": "2022 - Present",
+      "role": "Full Stack Developer / Developer Lead",
+      "period": "March 2022 - Present",
       "description": [
-        "Design and develop scalable web applications and backend services.",
-        "Implement responsive, user-friendly UI using React & TypeScript.",
-        "Build and integrate REST & GraphQL APIs.",
-        "Optimize application performance and database queries.",
-        "Lead and coordinate small development teams to meet project deadlines.",
-        "Successfully delivered a complete production-ready web & mobile application within 1 month."
+        "Led and coordinated small development teams to deliver enterprise-grade applications within tight timelines.",
+        "Successfully delivered a complete production-ready web and mobile application within 1 month.",
+        "Design and develop scalable web applications and backend services using React.js, Node.js, and Golang.",
+        "Implemented real-time communication systems using WebSockets for instant transaction synchronization.",
+        "Optimized database performance by 40% through advanced query tuning and indexing strategies.",
+        "Implemented distributed tracing and observability using OpenTelemetry and Datadog."
       ]
     }
   ],
   "projects": [
     {
-      "title": "Wine Platform",
-      "description": "A high-performance full-stack system for managing and analyzing wine data.",
-      "technologies": ["React", "TypeScript", "Golang", "Node.js", "GraphQL"],
-      "liveLink": "https://example.com",
-      "repoLink": "https://github.com",
-      "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?fit=crop&w=800&q=80"
+      "title": "Corksy",
+      "description": "Multi-site Wine E-commerce & POS platform with real-time inventory and reservation modules.",
+      "technologies": ["React.js", "Node.js", "PostgreSQL", "WebSockets"],
+      "liveLink": "#",
+      "repoLink": "https://github.com/Abishek-0412",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Incentive Fox",
+      "description": "B2B referral and rewards platform supporting automated reward fulfillment and QR systems.",
+      "technologies": ["AngularJS", "MSSQL", "REST APIs", "Zapier"],
+      "liveLink": "#",
+      "repoLink": "https://github.com/Abishek-0412",
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?fit=crop&w=800&q=80"
     },
     {
       "title": "Matrimony Application",
-      "description": "A complete cross-platform matrimonial service platform.",
-      "technologies": ["React", "TypeScript", "Node.js", "GraphQL", "Flutter"],
-      "liveLink": "https://example.com",
-      "repoLink": "https://github.com",
-      "image": "/image/matrimony.png"
-    },
-    {
-      "title": "Document Agent System",
-      "description": "AI-based intelligent agent for automatic software requirement and documentation generation.",
-      "technologies": ["AI", "Python", "LangChain", "React"],
-      "liveLink": "https://example.com",
-      "repoLink": "https://github.com",
-      "image": "https://images.unsplash.com/photo-1618044733300-9472054094ee?fit=crop&w=800&q=80"
-    },
-    {
-      "title": "Portfolio",
-      "description": "Personal portfolio website showcasing skills and projects. Built with modern web technologies.",
-      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "liveLink": "https://github.com/Abishek-0412",
+      "description": "A complete cross-platform matrimonial service platform delivered in 1 month with AI-assisted development.",
+      "technologies": ["React.js", "Node.js", "GraphQL", "Flutter"],
+      "liveLink": "#",
       "repoLink": "https://github.com/Abishek-0412",
-      "image": "/image/man-user-circle-icon.png"
+      "image": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?fit=crop&w=800&q=80"
+    },
+    {
+      "title": "aRa (Document Agent System)",
+      "description": "AI-driven agent system for automating requirement documents, test cases, and product descriptions.",
+      "technologies": ["Python", "LangChain", "LangGraph", "LLMs"],
+      "liveLink": "#",
+      "repoLink": "https://github.com/Abishek-0412",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Retina Watch",
+      "description": "AI-based medical imaging system for detecting retina-related conditions using deep learning.",
+      "technologies": ["Python", "PyTorch", "PyQt", "Medical Imaging"],
+      "liveLink": "#",
+      "repoLink": "https://github.com/Abishek-0412",
+      "image": "https://images.unsplash.com/photo-1576091160550-217359f4ecf8?fit=crop&w=800&q=80"
     }
   ],
   "education": [
@@ -113,10 +156,11 @@
   ],
   "certifications": [
     "MongoDB Administrator",
-    "Apache Kafka Fundamentals"
+    "Apache Kafka Fundamentals",
+    "AWS Certified Solutions Architect (In progress)"
   ],
   "additionalExpertise": {
-    "domains": ["SaaS", "Enterprise", "AI Tools", "Data Systems"],
-    "methodologies": ["Agile", "Team Leadership", "Performance Optimization"]
+    "domains": ["E-commerce", "SaaS", "AI/ML", "FinTech"],
+    "methodologies": ["Agile/Scrum", "Engineering Excellence", "System Design"]
   }
 }
