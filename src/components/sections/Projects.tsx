@@ -35,8 +35,8 @@ export default function Projects() {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-            Architecting and delivering robust, scalable solutions for complex
-            business challenges.
+            Company work delivered at Brightspot — production platforms for
+            commerce, rewards, matrimony, and AI.
           </p>
         </motion.div>
 

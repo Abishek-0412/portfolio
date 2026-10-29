@@ -28,6 +28,7 @@ export default function Navbar() {
     { name: "About", href: "/#about" },
     { name: "Skills", href: "/#skills" },
     { name: "Projects", href: "/#projects" },
+    { name: "Own Projects", href: "/#personal-projects" },
     { name: "Experience", href: "/#experience" },
     { name: "Contact", href: "/#contact" },
   ];
@@ -59,6 +60,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={() => setIsOpen(false)}
                   className="text-foreground/80 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {link.name}
@@ -107,6 +109,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={() => setIsOpen(false)}
                 className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
               >
                 {link.name}

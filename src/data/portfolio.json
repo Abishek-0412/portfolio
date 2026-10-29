@@ -5,7 +5,7 @@
     "bio": "Full Stack Developer with over 4 years of experience in building scalable, high-performance web applications across e-commerce, SaaS, and AI-driven platforms.",
     "email": "abishekn0412@gmail.com",
     "location": "Coimbatore, Tamil Nadu, India",
-    "image": "/image/img1-abi.png",
+    "image": "/image/abi_123.png",
     "social": {
       "github": "https://github.com/Abishek-0412",
       "linkedin": "https://www.linkedin.com/in/abishek-n-487a54218",
@@ -144,7 +144,44 @@
       "technologies": ["Python", "PyTorch", "PyQt", "Medical Imaging"],
       "liveLink": "#",
       "repoLink": "https://github.com/Abishek-0412",
-      "image": "https://images.unsplash.com/photo-1576091160550-217359f4ecf8?fit=crop&w=800&q=80"
+      "image": "/image/retina-watch.jpg"
+    }
+  ],
+  "personalProjects": [
+    {
+      "title": "AV Chat",
+      "tagline": "Ephemeral, end-to-end encrypted chat & voice calls",
+      "description": "A privacy-first Android messaging app with end-to-end encryption. Messages exist only in RAM — once the app is closed, everything vanishes. No database, no cloud storage. Supports 1:1 and group calls via WebRTC, with a lightweight relay server (Dart) that keeps nothing on disk.",
+      "status": "In Development",
+      "platform": "Android",
+      "technologies": ["Flutter", "Dart", "WebRTC", "E2E Encryption", "MVVM"],
+      "highlights": [
+        "Zero-persistence: messages live in RAM only, cleared on app close",
+        "End-to-end encrypted using key-pairs on the device",
+        "AV-ID identity system — no phone number required",
+        "Screenshots blocked via FLAG_SECURE",
+        "Relay server is stateless (memory only, saves nothing)"
+      ],
+      "repoLink": "https://github.com/Abishek-0412/AV_chat",
+      "image": "/image/av-chat.png"
+    },
+    {
+      "title": "VockyCall",
+      "tagline": "Short-distance voice calls over WiFi & Bluetooth — no internet needed",
+      "description": "An Android app for local voice calls between phones over WiFi or Bluetooth, with zero internet, SIM card, or server dependency. Phones communicate directly using WebRTC for WiFi and native Kotlin RFCOMM for Bluetooth. Supports group calls over WiFi and walkie-talkie push-to-talk mode.",
+      "status": "Completed",
+      "platform": "Android",
+      "technologies": ["Flutter", "Dart", "WebRTC", "Kotlin", "Riverpod", "Bluetooth"],
+      "highlights": [
+        "Works on WiFi & Bluetooth simultaneously — no internet needed",
+        "Group calls (up to multi-device) over WiFi via WebRTC",
+        "Bluetooth calls without pre-pairing using RFCOMM sockets",
+        "UDP multicast & subnet broadcast for auto device discovery",
+        "Native Kotlin BtCallService for raw PCM Bluetooth audio",
+        "Walkie-talkie (push-to-talk) mode + mute + earpiece/speaker toggle"
+      ],
+      "repoLink": "https://github.com/Abishek-0412/vocky_call",
+      "image": "/image/vocky.png"
     }
   ],
   "education": [
@@ -156,8 +193,8 @@
   ],
   "certifications": [
     "MongoDB Administrator",
-    "Apache Kafka Fundamentals",
-    "AWS Certified Solutions Architect (In progress)"
+    "Apache Kafka Fundamentals"
+    
   ],
   "additionalExpertise": {
     "domains": ["E-commerce", "SaaS", "AI/ML", "FinTech"],
